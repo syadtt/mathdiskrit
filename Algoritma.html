@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Algoritma &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Algoritma';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ALJABAR BOOLEAN" href="ALJABAR%20BOLEAN%20DAN%20LOGIKA.html" />
+    <link rel="prev" title="Logika Matematika" href="Logika%20dan%20Pembuktian.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Himpunan.html">HIMPUNAN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Logika%20dan%20Pembuktian.html">Logika Matematika</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algoritma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALJABAR%20BOLEAN%20DAN%20LOGIKA.html">ALJABAR BOOLEAN</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAlgoritma.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Algoritma.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Algoritma</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-sequential-search">Algoritma Sequential Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-pseudocode">Tujuan Pseudocode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pseudocode">Contoh Pseudocode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciri-ciri-pseudocode">Ciri-Ciri Pseudocode</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O Algoritma</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-big-o-notation">Tujuan Big O Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-kompleksitas-dalam-big-o">Jenis Kompleksitas dalam Big O</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notasi-umum-big-o">Notasi Umum Big O</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penggunaan-big-o">Contoh Penggunaan Big O</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengapa-big-o-penting">Mengapa Big O Penting?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algoritma-sequrntial-search">Hitung Big O dari Algoritma Sequrntial Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">Referensi</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="algoritma">
+<h1>Algoritma<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h1>
+<section id="definisi-algoritma">
+<h2>Definisi Algoritma<a class="headerlink" href="#definisi-algoritma" title="Link to this heading">#</a></h2>
+<p>Pengertian algoritma berdasarkan Microsoft Press Computer and Internet Dictionary (1998) merupakan deretan dari sekumpulan rangkaian tindakan tertentu yang pastinya logis dalam menyelesaikan persoalan. Logis di sini memiliki arti bahwa tindakan yang dilakukan harus sesuai dengan urutan dan tersusun secara runtut serta langkah tersebut harus diketahui dengan pasti agar algoritma yang dipakai dapat berjalan semestinya.</p>
+<p>Sjukani (2005) berpandangan bahwa algoritma merupakan jalan pikiran yang digunakan saat penyelesaian sebuah operasi yang dijabarkan dalam bentuk tertulis. Alur pikir disini mengisyaratkan bahwa jalan pikiran seseorang dapat berbeda dengan yang lainnya. Sementara itu makna tertulis berbentuk kalimat, tabel, atupun gambar tertentu yang dapat ditulis.</p>
+<p>Dalam pandangan Gunadarma (1988) definisi algoritma merupakan gabungan dari sekumpulan perintah yang menjabarkan langkah-langkah yang jelas saat prosedur pelaksanaan memecahkan sebuah permasalahan, dengan tuntutan himpunan bersifat mekanik.</p>
+<p>Dapat disimpulkan definisi algoritma adalah ilmu yang membahas cara-cara penyelesaian sebuah persoalan dengan deretan langkah tertentu kemudian tersusun dengan sistematis dan memakai bahasa logis serta memiliki sebuah tujuan .</p>
+<section id="algoritma-sequential-search">
+<h3>Algoritma Sequential Search<a class="headerlink" href="#algoritma-sequential-search" title="Link to this heading">#</a></h3>
+<p>Sequential search adalah teknik pencarian data dimana data dicari secara urut dari depan ke belakang atau dari awal sampai akhir berdasarkan key yang dicari (C, Antonius Rachmat dan M, Aditya Wikan, 2016). Kelebihan dari proses pencarian secara sequential search jika data yang dicari terletak di depan, maka data akan ditemukan dengan cepat. Tetapi dibalik kelebihannya ini, teknik ini juga memiliki kekurangan jika data yang dicari terletak di belakang atau paling akhir, maka akan membutuhkan waktu yang lama dalam proses pencariannya. Algoritma sequential search termasuk kedalam algoritma pencarian yang paling sederhana. Sequential search disebut juga pencarian lurus (linear search). Pada dasarnya, algoritma pencarian beruntun adalah proses membandingkan setiap elemen larik secara beruntun satu persatu, mulai dari 14 elemen pertama, sampai elemen yang dicari ditemukan, atau seluruh elemen sudah diperiksa. Atau singkatnya algoritma sequential search ini mencari data dari awal sampai ditemukan, setelah data ditemukan pencarian berhenti.</p>
+<p><strong>Algoritma Sequential Search</strong></p>
+<ul class="simple">
+<li><p>Cara kerja : Membandingkan data satu per satu secara berurutan, mulai dari elemen pertama sampai elemen yang dicari ditemukan</p></li>
+<li><p>Kelebihan : Jika data yang dicari terletak di depan, maka data akan ditemukan dengan cepat</p></li>
+<li><p>Kekurangan : Jika data yang dicari terletak di belakang atau paling akhir, maka akan membutuhkan waktu yang lama dalam proses pencariannya</p></li>
+<li><p>Nama lain : Pencarian linier (linear search)</p></li>
+</ul>
+</section>
+<section id="algoritma-binary-search">
+<h3>Algoritma Binary Search<a class="headerlink" href="#algoritma-binary-search" title="Link to this heading">#</a></h3>
+<p>Binary Search adalah algoritma pencarian yang efisien untuk menemukan elemen di dalam daftar yang sudah diurutkan. Algoritma ini bekerja dengan membagi daftar menjadi dua bagian secara rekursif hingga menemukan elemen yang dicari atau memastikan bahwa elemen tersebut tidak ada.</p>
+</section>
+</section>
+<section id="pseudocode">
+<h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Link to this heading">#</a></h2>
+<section id="pengertian">
+<h3>Pengertian<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h3>
+<p>Pseudocode adalah representasi sederhana dari algoritma atau langkah-langkah pemrograman yang ditulis dalam bahasa yang mirip dengan bahasa manusia. Pseudocode tidak mengikuti sintaks bahasa pemrograman tertentu, tetapi ditulis dengan cara yang cukup mirip agar mudah dipahami dan diubah menjadi kode nyata.</p>
+</section>
+<section id="tujuan-pseudocode">
+<h3>Tujuan Pseudocode<a class="headerlink" href="#tujuan-pseudocode" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Mempermudah Pemahaman Algoritma</strong>: Pseudocode membantu dalam memahami algoritma tanpa terjebak pada detail teknis bahasa pemrograman tertentu.</p></li>
+<li><p><strong>Komunikasi</strong>: Membantu programmer, desainer, atau siapa pun yang bekerja pada proyek untuk berkomunikasi dengan lebih baik.</p></li>
+<li><p><strong>Perencanaan</strong>: Digunakan untuk merencanakan struktur program sebelum mulai menulis kode sebenarnya.</p></li>
+</ul>
+</section>
+<section id="contoh-pseudocode">
+<h3>Contoh Pseudocode<a class="headerlink" href="#contoh-pseudocode" title="Link to this heading">#</a></h3>
+<p>Berikut adalah contoh pseudocode untuk Binary Search:</p>
+<ol class="arabic simple">
+<li><p>Tentukan low sebagai indeks awal (0) dan high sebagai indeks akhir (panjang array - 1).</p></li>
+<li><p>Selama low lebih kecil atau sama dengan high:</p>
+<ul class="simple">
+<li><p>Hitung mid sebagai indeks tengah dari (low + high) // 2.</p></li>
+<li><p>Jika elemen pada mid adalah elemen yang dicari (target):</p>
+<ul>
+<li><p>Kembalikan mid.</p></li>
+</ul>
+</li>
+<li><p>Jika elemen pada mid lebih besar dari target:</p>
+<ul>
+<li><p>Atur high ke mid - 1.</p></li>
+</ul>
+</li>
+<li><p>Jika elemen pada mid lebih kecil dari target:</p>
+<ul>
+<li><p>Atur low ke mid + 1.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Kembalikan -1 jika elemen tidak ditemukan.</p></li>
+</ol>
+</section>
+<section id="ciri-ciri-pseudocode">
+<h3>Ciri-Ciri Pseudocode<a class="headerlink" href="#ciri-ciri-pseudocode" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Bahasa Umum</strong>: Ditulis dalam bahasa yang mudah dimengerti oleh manusia.</p></li>
+<li><p><strong>Detail yang Cukup</strong>: Mengandung langkah-langkah utama tanpa terlalu terperinci tentang implementasi.</p></li>
+<li><p><strong>Struktur Logis</strong>: Menggunakan struktur kontrol umum seperti “jika”, “selama”, atau “untuk” untuk mengorganisir langkah-langkah.</p></li>
+</ul>
+<p>Pseudocode bertindak sebagai perantara antara pemikiran logis manusia dan penerjemahan logika tersebut ke dalam kode nyata dalam bahasa pemrograman.</p>
+</section>
+</section>
+<section id="big-o-algoritma">
+<h2>Big O Algoritma<a class="headerlink" href="#big-o-algoritma" title="Link to this heading">#</a></h2>
+<p>Big O Notation adalah cara untuk mengukur efisiensi algoritma, terutama dalam hal waktu atau ruang (memori) yang dibutuhkan. Notasi Big O berfokus pada perilaku algoritma saat ukuran input (n) tumbuh sangat besar, dan menggambarkan seberapa cepat waktu eksekusi atau penggunaan memori algoritma meningkat relatif terhadap ukuran input.</p>
+<section id="tujuan-big-o-notation">
+<h3>Tujuan Big O Notation<a class="headerlink" href="#tujuan-big-o-notation" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Mengukur Efisiensi Algoritma</strong>: Mengetahui seberapa baik algoritma akan berperforma saat ukuran data besar.</p></li>
+<li><p><strong>Membandingkan Algoritma</strong>: Big O Notation memungkinkan kita membandingkan efisiensi beberapa algoritma untuk memilih yang terbaik untuk kasus tertentu.</p></li>
+<li><p><strong>Memahami Skala Algoritma</strong>: Dengan Big O, kita bisa memahami seberapa baik algoritma beradaptasi dengan pertumbuhan data.</p></li>
+</ul>
+</section>
+<section id="jenis-kompleksitas-dalam-big-o">
+<h3>Jenis Kompleksitas dalam Big O<a class="headerlink" href="#jenis-kompleksitas-dalam-big-o" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Kompleksitas Waktu (Time Complexity)</strong>: Menunjukkan seberapa cepat waktu eksekusi algoritma bertambah dengan peningkatan ukuran input.</p></li>
+<li><p><strong>Kompleksitas Ruang (Space Complexity)</strong>: Menunjukkan seberapa besar penggunaan memori bertambah dengan peningkatan ukuran input.</p></li>
+</ol>
+</section>
+<section id="notasi-umum-big-o">
+<h3>Notasi Umum Big O<a class="headerlink" href="#notasi-umum-big-o" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>O(1) - Konstan</strong>: Waktu eksekusi tidak berubah terlepas dari ukuran input. Contoh: Mengakses elemen dalam array dengan indeks tertentu.</p></li>
+<li><p><strong>O(log n) - Logaritmik</strong>: Waktu eksekusi tumbuh secara logaritmik seiring dengan pertumbuhan input. Contoh: Binary Search, yang membagi masalah menjadi dua setiap langkah.</p></li>
+<li><p><strong>O(n) - Linear</strong>: Waktu eksekusi bertambah seiring dengan pertumbuhan input secara langsung. Contoh: Linear Search, yang memeriksa setiap elemen dalam daftar.</p></li>
+<li><p><strong>O(n log n) - Linear Logaritmik</strong>: Kombinasi antara linear dan logaritmik, umumnya ditemukan pada algoritma pengurutan yang efisien, seperti Merge Sort dan Quick Sort.</p></li>
+<li><p><strong>O(n²) - Kuadrat</strong>: Waktu eksekusi meningkat dengan kuadrat dari input. Contoh: Bubble Sort atau algoritma nested loop (dua lapisan).</p></li>
+<li><p><strong>O(2^n) - Eksponensial</strong>: Waktu eksekusi meningkat secara eksponensial dengan pertumbuhan input. Algoritma ini biasanya tidak praktis untuk input besar. Contoh: Algoritma rekursif yang menyelesaikan masalah subset atau kombinasi.</p></li>
+<li><p><strong>O(n!) - Faktorial</strong>: Waktu eksekusi meningkat secara faktorial, biasanya untuk masalah yang melibatkan semua kemungkinan urutan, seperti Permutasi.</p></li>
+</ol>
+</section>
+<section id="contoh-penggunaan-big-o">
+<h3>Contoh Penggunaan Big O<a class="headerlink" href="#contoh-penggunaan-big-o" title="Link to this heading">#</a></h3>
+<p><strong>Binary Search (O(log n))</strong>
+Binary Search pada daftar yang diurutkan secara logaritmik, membagi daftar menjadi dua setiap langkah, dan hanya membutuhkan beberapa langkah untuk menyelesaikan masalah meskipun ukuran input besar.</p>
+<p><strong>Bubble Sort (O(n²))</strong>
+Bubble Sort adalah algoritma pengurutan sederhana yang membandingkan setiap elemen berpasangan, membutuhkan dua lapisan loop untuk memeriksa semua kombinasi, sehingga kompleksitas waktu adalah kuadrat.</p>
+</section>
+<section id="mengapa-big-o-penting">
+<h3>Mengapa Big O Penting?<a class="headerlink" href="#mengapa-big-o-penting" title="Link to this heading">#</a></h3>
+<p>Big O memberikan panduan mengenai skala algoritma. Ketika ukuran data kecil, perbedaan antara O(n) dan O(n²) mungkin tidak terasa. Namun, saat data tumbuh besar, algoritma dengan kompleksitas yang lebih rendah (seperti O(log n) atau O(n)) akan jauh lebih efisien dibandingkan dengan algoritma dengan kompleksitas lebih tinggi (seperti O(n²) atau O(2^n)).</p>
+</section>
+</section>
+<section id="hitung-big-o-dari-algoritma-sequrntial-search">
+<h2>Hitung Big O dari Algoritma Sequrntial Search<a class="headerlink" href="#hitung-big-o-dari-algoritma-sequrntial-search" title="Link to this heading">#</a></h2>
+<ul>
+<li><p><strong>Waktu Kompleksitas (Time Complexity</strong>
+Algoritma Sequential Search memiliki kompleksitas waktu sebagai berikut:</p>
+<ul class="simple">
+<li><p><strong>Best Case (Kasus Terbaik): 𝑂(1)</strong>
+Terjadi ketika elemen yang dicari berada di awal daftar. Dalam hal ini, hanya satu perbandingan yang diperlukan.</p></li>
+<li><p><strong>Worst Case (Kasus Terburuk): 𝑂(𝑛)</strong>
+Terjadi ketika elemen yang dicari berada di akhir daftar atau tidak ada di dalam daftar sama sekali. Dalam kasus ini, algoritma harus memeriksa semua elemen dalam daftar.</p></li>
+<li><p><strong>Average Case (Kasus Rata-rata): 𝑂(𝑛)</strong>
+Jika kita asumsikan elemen yang dicari dapat berada di posisi mana pun dengan peluang yang sama, rata-rata waktu yang diperlukan adalah sekitar separuh dari panjang daftar, yaitu 𝑂(𝑛/2). Namun, dalam notasi Big O, 𝑂(𝑛/2) disederhanakan menjadi 𝑂(𝑛).</p></li>
+</ul>
+</li>
+<li><p><strong>Ruang Kompleksitas (Space Complexity)</strong></p>
+<ul>
+<li><p><strong>Ruang Tetap (Constant Space)</strong>: Algoritma Sequential Search hanya membutuhkan sejumlah variabel tetap untuk menyimpan indeks saat iterasi dan elemen target yang dicari.</p>
+<p>Misalnya, jika kita menggunakan variabel index untuk menyimpan posisi saat ini dan target untuk menyimpan nilai yang dicari, ruang yang dibutuhkan oleh algoritma ini tidak bergantung pada ukuran input (list/array). Karena hanya membutuhkan beberapa variabel tambahan, ruang yang diperlukan adalah konstan.</p>
+</li>
+<li><p><strong>Ruang Kompleksitas</strong>: Karena tidak ada struktur data tambahan yang digunakan yang bergantung pada jumlah elemen dalam daftar, ruang kompleksitasnya adalah:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                          **O(1)**
+</pre></div>
+</div>
+<p>Ini berarti bahwa algoritma Sequential Search memiliki ruang kompleksitas sebesar 𝑂(1), atau disebut juga sebagai Constant Space Complexity. Algoritma ini hanya memerlukan ruang tetap yang tidak bertambah dengan meningkatnya jumlah elemen dalam daftar.</p>
+<p>Secara umum, Sequential Search sangat efisien dari segi penggunaan memori karena tidak memerlukan ruang tambahan yang signifikan, selain dari variabel untuk iterasi dan menyimpan elemen target.</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="referensi">
+<h2>Referensi<a class="headerlink" href="#referensi" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://osf.io/preprints/osf/agnzm">https://osf.io/preprints/osf/agnzm</a></p></li>
+<li><p><a class="reference external" href="https://media.neliti.com/media/publications/360919-none-b992c0d2.pdf">https://media.neliti.com/media/publications/360919-none-b992c0d2.pdf</a></p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Logika%20dan%20Pembuktian.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Logika Matematika</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ALJABAR%20BOLEAN%20DAN%20LOGIKA.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ALJABAR BOOLEAN</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-sequential-search">Algoritma Sequential Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-pseudocode">Tujuan Pseudocode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pseudocode">Contoh Pseudocode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciri-ciri-pseudocode">Ciri-Ciri Pseudocode</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O Algoritma</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-big-o-notation">Tujuan Big O Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-kompleksitas-dalam-big-o">Jenis Kompleksitas dalam Big O</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notasi-umum-big-o">Notasi Umum Big O</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-penggunaan-big-o">Contoh Penggunaan Big O</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengapa-big-o-penting">Mengapa Big O Penting?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algoritma-sequrntial-search">Hitung Big O dari Algoritma Sequrntial Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">Referensi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
