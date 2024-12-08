@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ALJABAR BOOLEAN &#8212; My sample book</title>
+    <title>Probabilitas &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,10 +57,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ALJABAR BOLEAN DAN LOGIKA';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'probabilitas';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Algoritma" href="Algoritma.html" />
+    <link rel="prev" title="Deretan dan Rekursi" href="deretandanrekursi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,12 +176,12 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to MATHDISK Book
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-          <li class="toctree-l1"><a class="reference internal" href="Himpunan.html">HIMPUNAN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Himpunan.html">HIMPUNAN</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika%20dan%20Pembuktian.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALJABAR%20BOLEAN%20DAN%20LOGIKA.html">ALJABAR BOOLEAN</a></li>
@@ -257,7 +259,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FALJABAR BOLEAN DAN LOGIKA.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fprobabilitas.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +289,7 @@
       
       
       
-      <li><a href="_sources/ALJABAR BOLEAN DAN LOGIKA.md" target="_blank"
+      <li><a href="_sources/probabilitas.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>ALJABAR BOOLEAN</h1>
+    <h1>Probabilitas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,16 +383,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manfaat-dalam-pemrograman">Manfaat dalam Pemrograman</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-dalam-pemrograman-python">Contoh dalam pemrograman python</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aksioma-aksioma">Aksioma-Aksioma:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aljabar-bolean">ALJABAR BOLEAN</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">BOOLEAN ALGEBRA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">Contoh 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2">Contoh 2</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logic-gates">Logic Gates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komponen-digital">Komponen Digital</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinational-circuits">Combinational Circuits</a></li>
 </ul>
             </nav>
         </div>
@@ -402,126 +399,133 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="aljabar-boolean">
-<h1>ALJABAR BOOLEAN<a class="headerlink" href="#aljabar-boolean" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="probabilitas">
+<h1>Probabilitas<a class="headerlink" href="#probabilitas" title="Link to this heading">#</a></h1>
+<section id="teorema-bayes">
+<h2>Teorema Bayes<a class="headerlink" href="#teorema-bayes" title="Link to this heading">#</a></h2>
+<p>Teorema Bayes memberi tahu kita bagaimana menghitung probabilitas kondisional dari suatu peristiwa berdasarkan pengetahuan sebelumnya tentang peristiwa itu. Dengan kata lain, ini memungkinkan kita untuk menghitung <strong>probabilitas posterior</strong> berdasarkan <strong>probabilitas sebelumnya</strong> :</p>
+<div class="math notranslate nohighlight">
+\[
+P(E|C) = \frac{P(C|E) \cdot P(E)}{P(C)}
+\]</div>
+<p>Dalam persamaan ini, kita memiliki empat istilah ini:</p>
 <ul class="simple">
-<li><p><strong>Operator Biner</strong>:
-Aljabar Boolean memiliki dua operator biner:</p>
-<ul>
-<li><p>Penjumlahan (+): Digunakan untuk operasi disjungsi (OR).</p></li>
-<li><p>Perkalian (⋅): Digunakan untuk operasi konjungsi (AND).</p></li>
+<li><p><strong>Posterior Probability</strong> <em>P(E | C)</em>: probabilitas peristiwa E terjadi, mengingat kondisi C benar.</p></li>
+<li><p><strong>Prior Probability</strong> <em>P(E)</em>: satu-satunya probabilitas peristiwa E terjadi, yang merupakan pengetahuan sebelumnya tentang peristiwa itu sendiri.</p></li>
+<li><p><strong>Likelihood</strong> <em>P(C | E)</em>: probabilitas kondisi C menjadi benar, mengingat peristiwa E terjadi.</p></li>
+<li><p><strong>Marginal Probability</strong> <em>P(C )</em>: satu-satunya probabilitas kondisi C menjadi benar.</p></li>
+</ul>
+<section id="contoh-1">
+<h3>Contoh 1<a class="headerlink" href="#contoh-1" title="Link to this heading">#</a></h3>
+<p>Jika Anda memiliki dua kelas <span class="math notranslate nohighlight">\(C_1\)</span> dan <span class="math notranslate nohighlight">\(C_2\)</span>, serta fitur <span class="math notranslate nohighlight">\(x_1\)</span>, <span class="math notranslate nohighlight">\(x_2\)</span> :</p>
+<p>Diketahui:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(C_1) = 0.5 \), \( P(C_2) = 0.5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(x_1|C_1) = 0.8 \), \( P(x_2|C_1) = 0.6\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(x_1|C_2) = 0.4 \), \( P(x_2|C_2) = 0.7\)</span></p></li>
+</ul>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(P(C_1|X)\)</span> dan <span class="math notranslate nohighlight">\(P(C_2|X)\)</span>:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(P(X|C_1) = P(x_1|C_1) \cdot P(x_2|C_1) = 0.8 \cdot 0.6 = 0.48\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(X|C_2) = P(x_1|C_2) \cdot P(x_2|C_2) = 0.4 \cdot 0.7 = 0.28\)</span></p></li>
+<li><p>Normalisasi:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(C_1|X) = \frac{P(X|C_1) \cdot P(C_1)}{P(X)} = \frac{0.48 \cdot 0.5}{0.48 + 0.28} \approx 0.63\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(C_2|X) = \frac{P(X|C_2) \cdot P(C_2)}{P(X)} = \frac{0.28 \cdot 0.5}{0.48 + 0.28} \approx 0.37\)</span></p></li>
 </ul>
 </li>
-<li><p><strong>Operator Uner</strong>:</p>
-<ul>
-<li><p>Komplemen (’): Digunakan untuk menghasilkan nilai yang berlawanan dari suatu elemen. Misalnya, jika a = 1, maka a’ = 0, dan sebaliknya.</p></li>
+</ol>
+<p>Sehingga data <span class="math notranslate nohighlight">\(X\)</span> lebih mungkin masuk ke <span class="math notranslate nohighlight">\(C_1\)</span>.</p>
+</section>
+<section id="contoh-2">
+<h3>Contoh 2<a class="headerlink" href="#contoh-2" title="Link to this heading">#</a></h3>
+<p>Bagaimana kemungkinan/probabilitas usia paruh baya tekanan darah sangat tinggi  kemungkinan penyakit Hipertensi (H) atau Tidak (T)</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Usia</p></th>
+<th class="head"><p>Tekanan Darah</p></th>
+<th class="head"><p>Penyakit (H/T)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Muda</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Muda</p></td>
+<td><p>Tinggi</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Paruh baya</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Paruh baya</p></td>
+<td><p>Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Tua</p></td>
+<td><p>Normal</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Tua</p></td>
+<td><p>Sangat Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Muda</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Tua</p></td>
+<td><p>Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Jawaban</strong> :</p>
+<div class="math notranslate nohighlight">
+\[
+P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)}
+\]</div>
+<p>Di mana:</p>
+<ul class="simple">
+<li><p>P(H|E) adalah probabilitas hipotesis (H) diberikan bukti (E)</p></li>
+<li><p>P(E|H) adalah probabilitas bukti diberikan hipotesis</p></li>
+<li><p>P(H) adalah probabilitas awal hipotesis</p></li>
+<li><p>P(E) adalah probabilitas awal bukti</p></li>
 </ul>
+<p>Dalam kasus ini, hipotesis adalah “Hipertensi” (H) dan buktinya adalah “Usia Paruh Baya” dan “Tekanan Darah Sangat Tinggi”.</p>
+<p>Langkah-langkah perhitungannya adalah sebagai berikut:</p>
+<ol class="arabic">
+<li><p>Menghitung P(H|E) untuk Hipertensi:</p>
+<p>a. P(E|H) = 1, karena tabel menunjukkan bahwa untuk Usia Paruh Baya dan Tekanan Darah Sangat Tinggi, hasilnya selalu Hipertensi (H).</p>
+<p>b. P(H) = 1/8 = 0,125, karena ada 8 baris total dalam tabel dan 1 di antaranya memiliki hasil H.</p>
+<p>c. P(E) = 1/8 = 0,125, karena ada 1 baris dalam tabel dengan Usia Paruh Baya dan Tekanan Darah Sangat Tinggi.</p>
+<p>d. Memasukkan nilai-nilai ini ke dalam rumus: P(H|E) = (1 * 0,125) / 0,125 = 1 atau 100%.</p>
 </li>
-</ul>
-<section id="manfaat-dalam-pemrograman">
-<h2>Manfaat dalam Pemrograman<a class="headerlink" href="#manfaat-dalam-pemrograman" title="Link to this heading">#</a></h2>
-<p>Aljabar Boolean sering digunakan dalam pemrograman untuk mengevaluasi ekspresi logika.</p>
-<section id="contoh-dalam-pemrograman-python">
-<h3>Contoh dalam pemrograman python<a class="headerlink" href="#contoh-dalam-pemrograman-python" title="Link to this heading">#</a></h3>
-<p><img alt="image" src="https://hackmd.io/_uploads/SJEAUrt1Jl.png" /></p>
-</section>
-<section id="aksioma-aksioma">
-<h3>Aksioma-Aksioma:<a class="headerlink" href="#aksioma-aksioma" title="Link to this heading">#</a></h3>
-<p>Untuk setiap a, b, c ∈ B, berlaku aksioma-aksioma berikut:</p>
-<ul class="simple">
-<li><p>Closure: a + b ∈ B dan a ⋅ b ∈ B.</p></li>
-<li><p>Identitas: a + 0 = a dan a ⋅ 1 = a.</p></li>
-<li><p>Komutatif: a + b = b + a dan a ⋅ b = b ⋅ a.</p></li>
-<li><p>Distributif: a ⋅ (b + c) = (a ⋅ b) + (a ⋅ c) dan a</p></li>
-<li><p>(b ⋅ c) = (a + b) ⋅ (a + c).</p></li>
-<li><p>Komplemen: Untuk setiap a ∈ B, terdapat elemen unik a’ ∈ B sehingga a + a’ = 1 dan a ⋅ a’ = 0</p></li>
-<li><p>Aljabar Boolean adalah sistem matematika untuk manipulasi variabel yang dapat memiliki salah satu dari dua nilai.</p>
-<ul>
-<li><p>Dalam logika formal, nilai-nilai ini adalah “benar” dan “salah.”</p></li>
-<li><p>Dalam sistem digital, nilai-nilai ini adalah “nyala” dan “mati,” 1 dan 0, atau “tinggi” dan “rendah.”</p></li>
-</ul>
+<li><p>P(T|E) untuk Tidak Hipertensi:</p>
+<p>a. P(E|T) = 0, karena tabel menunjukkan bahwa untuk Usia Paruh Baya dan Tekanan Darah Sangat Tinggi, hasilnya tidak pernah Tidak Hipertensi (T).</p>
+<p>b. P(T) = 7/8 = 0,875, karena ada 7 baris dengan hasil T dari total 8 baris.</p>
+<p>c. P(E) = 1/8 = 0,125, seperti yang dihitung sebelumnya.</p>
+<p>d. Memasukkan nilai-nilai ini ke dalam rumus: P(T|E) = (0 * 0,875) / 0,125 = 0 atau 0%.</p>
 </li>
-<li><p>Ekspresi Boolean dibuat dengan melakukan operasi pada variabel Boolean.</p></li>
-<li><p>Operator Boolean yang umum termasuk AND (AND), (OR), dan (NOT).</p></li>
-</ul>
-</section>
-<section id="aljabar-bolean">
-<h3>ALJABAR BOLEAN<a class="headerlink" href="#aljabar-bolean" title="Link to this heading">#</a></h3>
+</ol>
+<p>Jadi, kesimpulannya adalah:</p>
 <ul class="simple">
-<li><p>Sebuah operator Boolean dapat dijelaskan sepenuhnya menggunakan tabel kebenaran.</p></li>
-<li><p>Tabel kebenaran untuk operator Boolean D (AND) dan (OR) ditunjukkan di sebelah kanan.</p></li>
-<li><p>Operator AND  juga dikenal sebagai produk Boolean. Operator OR adalah jumlah Boolean.
-<img alt="image" src="https://hackmd.io/_uploads/rkgIdrK11e.png" /></p></li>
+<li><p>Probabilitas Hipertensi pada usia paruh baya dengan tekanan darah sangat tinggi adalah 100%.</p></li>
+<li><p>Probabilitas Tidak Hipertensi pada usia paruh baya dengan tekanan darah sangat tinggi adalah 0%.</p></li>
 </ul>
 </section>
-<section id="boolean-algebra">
-<h3>BOOLEAN ALGEBRA<a class="headerlink" href="#boolean-algebra" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Tabel kebenaran untuk operator Boolean (NOT) ditunjukkan di sebelah kanan.</p></li>
-<li><p>Operasi NOT paling sering dilambangkan dengan garis atas.
-<img alt="image" src="https://hackmd.io/_uploads/rJgyKrKkkl.png" /></p></li>
-<li><p>Sebuah fungsi Boolean memiliki:</p>
-<ul>
-<li><p>Setidaknya satu variabel Boolean,</p></li>
-<li><p>Setidaknya satu operator Boolean, dan</p></li>
-<li><p>Setidaknya satu input dari himpunan {0,1}.</p></li>
-</ul>
-</li>
-<li><p>Fungsi ini menghasilkan output yang juga merupakan anggota dari himpunan {0,1}.</p></li>
-<li><p>Tabel kebenaran untuk fungsi Boolean. :
-<img alt="image" src="https://hackmd.io/_uploads/rJvVcSFJyg.png" />
-ditunjukkan sebelah kanan.</p></li>
-<li><p>Untuk mempermudah evaluasi fungsi Boolean, tabel kebenaran berisi kolom tambahan (diarsir) untuk menyimpan evaluasi dari bagian-bagian subfungsi.
-<img alt="image" src="https://hackmd.io/_uploads/ByDu5Bt1ke.png" /></p></li>
-<li><p>Sebagian besar identitas Boolean memiliki bentuk AND (perkallian) serta bentuk OR (jumlah). Kami menyajikan identitas kami menggunakan kedua bentuk tersebut.
-<img alt="image" src="https://hackmd.io/_uploads/ryincSKJ1g.png" /></p></li>
-<li><p>Kelompo 3
-<img alt="image" src="https://hackmd.io/_uploads/SkrxjSKJye.png" /></p></li>
-<li><p>Terkadang, lebih ekonomis membangun sirkuit dengan menggunakan komplemen fungsi dan mengkomplementasi hasilnya dibandingkan mengimplementasikan fungsi secara langsung. Hukum DeMorgan memudahkan penemuan komplemen dari fungsi Boolean, yang menyatakan :
-<img alt="image" src="https://hackmd.io/_uploads/SyD4oHtyye.png" /></p></li>
-<li><p>Fungsi Boolean diimplementasikan dalam sirkuit komputer digital yang disebut gerbang (gates).</p></li>
-<li><p>Gerbang adalah perangkat elektronik yang menghasilkan hasil berdasarkan dua atau lebih nilai input.</p></li>
-<li><p>Dalam kenyataannya, gerbang terdiri dari satu hingga enam transistor, tetapi desainer digital menganggapnya sebagai satu kesatuan.</p></li>
-<li><p>Sirkuit terintegrasi mengandung kumpulan gerbang yang sesuai untuk tujuan tertentu.</p></li>
-</ul>
-</section>
-</section>
-<section id="logic-gates">
-<h2>Logic Gates<a class="headerlink" href="#logic-gates" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Tiga gerbang AND, OR, dan  NOT.
-<img alt="image" src="https://hackmd.io/_uploads/rkv0jrYJJx.png" /></p></li>
-<li><p>Gerbang yang sangat berguna lainnya adalah gerbang eksklusif OR (XOR).</p></li>
-<li><p>Output dari operasi XOR adalah benar hanya ketika nilai-nilai input berbeda.
-<img alt="image" src="https://hackmd.io/_uploads/Bykv3rFJJg.png" /></p></li>
-<li><p>NAND dan NOR dua gerbang yang sangat penting. Simbol dan tabel kebenarannya ditunjukkan di sebelah kanan.
-<img alt="image" src="https://hackmd.io/_uploads/SyscnBKyyg.png" /></p></li>
-<li><p>NAND dan NOR dikenal dengan gerbang universal  karena mereka murah untuk diproduksi dan setiap fungsi Boolean dapat dibangun menggunakan gerbang ini. NAND atau hanya gerbang NOR .
-<img alt="image" src="https://hackmd.io/_uploads/rJx16Btykx.png" /></p></li>
-<li><p>Gerbang dapat memiliki beberapa  inputs dan dan lebih dari satu output.</p>
-<ul>
-<li><p>Output kedua dapat disediakan untuk komplemen dari operasi.
-<img alt="image" src="https://hackmd.io/_uploads/S1-ETHF1Jl.png" /></p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="komponen-digital">
-<h2>Komponen Digital<a class="headerlink" href="#komponen-digital" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Hal utama yang perlu diingat adalah bahwa kombinasi gerbang menerapkan fungsi Boolean.</p></li>
-<li><p>Rangkaian di bawah ini mengimplementasikan fungsi Boolean :
-<img alt="image" src="https://hackmd.io/_uploads/r1iOCSYyye.png" /></p></li>
-</ul>
-</section>
-<section id="combinational-circuits">
-<h2>Combinational Circuits<a class="headerlink" href="#combinational-circuits" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Kami telah merancang rangkaian yang mengimplementasikan fungsi Boolean :
-<img alt="image" src="https://hackmd.io/_uploads/SJ0lyUK1kg.png" /></p></li>
-<li><p>Rangkaian ini merupakan contoh rangkaian logika kombinasional.</p></li>
-<li><p>Rangkaian logika kombinasional menghasilkan output tertentu</p></li>
-</ul>
 </section>
 </section>
 
@@ -556,12 +560,12 @@ ditunjukkan sebelah kanan.</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Algoritma.html"
+       href="deretandanrekursi.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Algoritma</p>
+        <p class="prev-next-title">Deretan dan Rekursi</p>
       </div>
     </a>
 </div>
@@ -580,16 +584,11 @@ ditunjukkan sebelah kanan.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manfaat-dalam-pemrograman">Manfaat dalam Pemrograman</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-dalam-pemrograman-python">Contoh dalam pemrograman python</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aksioma-aksioma">Aksioma-Aksioma:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aljabar-bolean">ALJABAR BOLEAN</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">BOOLEAN ALGEBRA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">Contoh 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2">Contoh 2</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logic-gates">Logic Gates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komponen-digital">Komponen Digital</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinational-circuits">Combinational Circuits</a></li>
 </ul>
   </nav></div>
 
