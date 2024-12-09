@@ -105,7 +105,7 @@ kebenarannya sebagai berikut :
 | -------- | -------- | -------- |
 | B     | B     | B     |
 | B     | S     | S     |
-| S     | B     | B     |
+| S     | B     | S     |
 | S     | S     | B     |
 
 **atau**
@@ -114,7 +114,7 @@ kebenarannya sebagai berikut :
 | -------- | -------- | -------- |
 | 1     | 1     | 1     |
 | 1     | 0     | 0     |
-| 0     | 1     | 1     |
+| 0     | 1     | 0     |
 | 0     | 0     | 1     |
 ## Referensi
 https://cdn-gbelajar.simpkb.id/s3/p3k/Matematika/Per%20Pembelajaran/Matematika%20-%20PB3.pdf

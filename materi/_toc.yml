@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 chapters:
 - file: Himpunan
-- file: Logika dan Pembuktian
+- file: Logika dan Pembuktian (1)
 - file: Algoritma
 - file: ALJABAR BOLEAN DAN LOGIKA
 - file: Analisa Graph
